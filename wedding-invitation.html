@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#faf5eb">
+<meta name="description" content="The wedding invitation of Ankur and Neetu, 20–21 November 2026, Gajraula.">
+<title>Ankur weds Neetu | Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Poppins:wght@300;400;500;600&family=Yatra+One&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#faf5eb;--paper:#fffdf8;--gold:#bd9140;--gold2:#ead49d;--gold-dark:#88601e;--maroon:#681e32;--rust:#a64c2b;--ink:#332b27;--muted:#75685a;--line:#e8d9b9;--shadow:0 18px 55px #4a2e1718}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Poppins,Arial,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(#c6a76a55 .7px,transparent .8px),radial-gradient(#c6a76a38 .7px,transparent .8px);background-size:27px 27px;background-position:0 0,13px 13px}
+button,a,input,textarea,select{font:inherit}button{cursor:pointer}a{color:inherit}
+.entry{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:22px;background:radial-gradient(ellipse at center,#4b1728 0%,#210b14 100%);transition:opacity .9s,visibility .9s,background 1.35s ease}
+.entry.hide{opacity:0;visibility:hidden;pointer-events:none}
+.entry.opening{background:transparent;transition:background 1.85s ease}
+.curtain{position:absolute;inset:0;z-index:101;display:flex;overflow:hidden;pointer-events:none}
+.curtain-panel{position:relative;width:50%;height:100%;background:linear-gradient(90deg,#310b1b 0%,#641d34 18%,#8a2d49 43%,#651b34 72%,#350d20 100%);box-shadow:inset -18px 0 28px #16050d88,inset 10px 0 24px #d28b6530;transition:transform 1.85s cubic-bezier(.72,0,.18,1);will-change:transform;transform-style:preserve-3d}
+.curtain-panel:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,#ffffff08 0 2px,transparent 2px 13px),radial-gradient(ellipse at 50% 45%,#c66b7933,transparent 68%);opacity:.85}
+.curtain-panel.left{border-right:3px solid #d5b16b}
+.curtain-panel.right{border-left:3px solid #d5b16b;transform:scaleX(-1)}
+.curtain-panel:after{content:"✦     ❧     ✦";position:absolute;top:50%;left:0;width:100%;text-align:center;color:#e2c17b;font:clamp(1.1rem,3vw,2rem) 'Playfair Display',serif;letter-spacing:.25em;text-shadow:0 2px 12px #1b0710}
+.curtain-hem{position:absolute;bottom:0;left:0;right:0;height:9px;background:repeating-linear-gradient(90deg,#c7a05c 0 7px,#6c2338 7px 14px);box-shadow:0 -3px 12px #16050d66}
+.entry.opening .curtain-panel.left{transform:translateX(-105%)}
+.entry.opening .curtain-panel.right{transform:translateX(105%) scaleX(-1)}
+.entry.opening .entry-card{opacity:0;transform:translateY(18px) scale(.96);transition:opacity .45s ease,transform .6s ease}
+.entry-card{z-index:102;transition:opacity .45s ease,transform .6s ease}
+.entry-card{width:min(510px,100%);padding:42px 26px;text-align:center;background:#fffdf8eF;border:1px solid var(--gold);outline:1px solid #bd914055;outline-offset:7px;box-shadow:var(--shadow);position:relative}
+.entry-card:before,.entry-card:after{content:"❀";position:absolute;color:var(--gold);font-size:25px}.entry-card:before{top:12px;left:15px}.entry-card:after{right:15px;bottom:12px}
+.entry-ganesh{font-size:2.2rem;color:var(--gold)}.entry h1{font:4.4rem 'Great Vibes',cursive;color:var(--maroon);margin:8px 0}.entry h1 span{color:var(--gold)}.entry p{color:var(--muted);font-family:'Playfair Display',serif;line-height:1.7}
+.eyebrow{font:600 .65rem Cinzel,serif;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-dark)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 20px;border:1px solid var(--gold);border-radius:9px;background:var(--maroon);color:white;text-decoration:none;font-size:.76rem;font-weight:500;letter-spacing:.04em;box-shadow:0 6px 18px #681e3220;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px #681e3228}.btn.gold{background:linear-gradient(120deg,#b78632,#d6b66e);border-color:#b78632}.btn.light{background:#fffdf8;color:var(--maroon)}
+.top-controls{position:fixed;right:14px;top:14px;z-index:30;display:flex;gap:8px}
+.control{border:1px solid #bd9140a8;background:#fffdf0ed;color:var(--maroon);border-radius:99px;padding:10px 14px;box-shadow:0 5px 18px #3a25121c;font-size:.72rem}
+.music-panel{position:fixed;right:14px;top:60px;z-index:30;display:none;align-items:center;gap:8px;background:#fffdf8;border:1px solid var(--line);padding:10px 12px;border-radius:12px;box-shadow:var(--shadow)}
+.music-panel.open{display:flex}.music-panel small{display:block;color:var(--muted);font-size:.58rem}.music-panel strong{font:600 .88rem 'Playfair Display',serif}.music-panel button{border:0;background:#f4ead7;color:var(--maroon);width:32px;height:32px;border-radius:50%}
+main{width:min(940px,calc(100% - 28px));margin:34px auto 45px;position:relative}
+.invitation{position:relative;background:var(--paper);border:5px double #bd914080;border-radius:20px;padding:clamp(22px,5vw,58px);box-shadow:0 22px 70px #442c171c;overflow:hidden}
+.invitation:before{content:"";position:absolute;inset:8px;border:1px solid #bd914055;border-radius:13px;pointer-events:none}
+.corner{position:absolute;color:var(--gold);font-size:2rem;z-index:1;line-height:1}.tl{top:13px;left:16px}.tr{top:13px;right:16px}.bl{bottom:13px;left:16px}.br{bottom:13px;right:16px}
+.hero{text-align:center;position:relative;padding:8px 8px 28px}.ganesh{width:108px;height:126px;margin:0 auto 4px;filter:drop-shadow(0 4px 5px #b98c3c33)}
+.shloka{font:1.05rem/1.9 'Yatra One',serif;color:var(--maroon);margin:8px auto;max-width:680px}.divider{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--gold);margin:15px auto}.divider span{height:1px;width:90px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.family{font:500 .7rem Cinzel,serif;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-top:17px}.grandparents{font:500 1rem 'Playfair Display',serif;margin:6px auto 17px}
+.couple{margin:14px 0}.couple h1,.couple h2{font:clamp(4.1rem,12vw,6.7rem)/.9 'Great Vibes',cursive;color:#a8792d;margin:5px 0;text-shadow:1px 2px #e9d8ad}.parents{font: .88rem 'Playfair Display',serif;color:#5c5042;line-height:1.6}.parents b{color:var(--maroon);font-weight:600}
+.weds{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--maroon);font:2rem 'Great Vibes',cursive;margin:8px}.weds:before,.weds:after{content:"";height:1px;width:65px;background:var(--gold)}
+.invite-verse{max-width:610px;margin:28px auto 25px;padding:17px 18px;border:1px solid #bd914066;border-radius:14px;background:linear-gradient(120deg,#fbf4e5,#fffdf8);font:italic 1rem/1.8 'Playfair Display',serif;color:var(--maroon);text-align:center}
+.countdown-wrap{text-align:center;margin:26px auto 35px}.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:550px;margin:17px auto}.count{padding:13px 7px;background:linear-gradient(#fff,#f8eedb);border:1px solid #bd914080;border-radius:13px;box-shadow:0 4px 12px #61421a0d}.count strong{display:block;font:600 clamp(1.7rem,5vw,2.8rem) Cinzel,serif;color:var(--maroon)}.count span{font:600 .59rem Poppins,sans-serif;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+.section{margin:40px 0;scroll-margin-top:25px}.section-head{text-align:center;margin-bottom:22px}.section-head h2{font:600 clamp(1.45rem,4vw,2rem) Cinzel,serif;color:var(--maroon);margin:9px 0}.section-head p{font:italic .9rem 'Playfair Display',serif;color:var(--muted);margin:5px}
+.ribbon{display:inline-block;padding:8px 25px;border-block:2px solid var(--gold);background:linear-gradient(90deg,#bd914010,#bd914044,#bd914010);font:600 .95rem Cinzel,serif;color:var(--maroon);letter-spacing:.1em;text-transform:uppercase}
+.program-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.day-card{position:relative;padding:20px;border:1px solid #bd914077;border-radius:16px;background:linear-gradient(145deg,#fffefa,#fbf2df);box-shadow:0 8px 22px #4a2e170b;overflow:hidden}.day-card:after{content:"✥";position:absolute;right:9px;top:5px;color:#bd914033;font-size:3.4rem}
+.day-title{display:flex;gap:12px;align-items:center;padding-bottom:13px;border-bottom:1px solid var(--line);margin-bottom:15px}.day-number{width:43px;height:43px;border-radius:50%;display:grid;place-items:center;background:var(--maroon);color:white;font:600 1rem Cinzel,serif}.day-title h3{font:600 1rem Cinzel,serif;color:var(--maroon);margin:0}.day-title p{font-size:.7rem;color:var(--gold-dark);margin:3px 0 0}
+.event{display:flex;gap:11px;margin:15px 0;align-items:flex-start}.event-icon{flex:0 0 32px;height:32px;border-radius:50%;display:grid;place-items:center;background:#f5e7c9;color:var(--maroon);border:1px solid #e4c98f}.event-info{flex:1}.event-top{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.event-top b{font-size:.79rem;color:var(--ink)}.time{font-size:.61rem;padding:3px 7px;border-radius:30px;background:#f6e7c7;border:1px solid #e4c98f;color:#6b4b18;font-weight:600}.event-info p{font: .74rem/1.5 'Playfair Display',serif;color:var(--muted);margin:4px 0 0}
+.day-quote{margin-top:17px;padding:12px;background:#fffaf0;border:1px solid var(--line);border-radius:10px;font:italic .8rem/1.6 'Playfair Display',serif;color:var(--muted)}
+.venue-card{padding:25px 18px;text-align:center;border:2px solid #bd914077;border-radius:17px;background:linear-gradient(#fffefa,#f8efdE);box-shadow:0 9px 24px #4a2e170d}.venue-icon{width:48px;height:48px;margin:0 auto 10px;border-radius:50%;display:grid;place-items:center;background:#f3e5c6;border:1px solid var(--gold);font-size:1.3rem;color:var(--maroon)}.venue-card h3{font:600 clamp(1.3rem,4vw,2rem) Cinzel,serif;color:var(--maroon);margin:7px}.venue-address{font: .94rem/1.8 'Playfair Display',serif;color:var(--muted)}.venue-actions{display:flex;gap:9px;justify-content:center;flex-wrap:wrap;margin:18px 0 0}.map{width:100%;height:260px;border:0;border-radius:12px;margin-top:18px;filter:sepia(.12) saturate(.8)}
+.wishes-card{border:1px solid #bd914077;border-radius:16px;padding:20px;background:#fffefa}.field{margin:12px 0}.field label{display:block;font-size:.67rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}.field input,.field textarea,.field select{width:100%;border:1px solid var(--line);border-radius:9px;padding:11px;background:#fffdf8;color:var(--ink);font-size:.82rem;outline:none}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--gold);box-shadow:0 0 0 3px #bd914022}.wishes-list{display:grid;gap:10px;margin-top:18px;max-height:340px;overflow:auto}.wish{display:flex;gap:10px;padding:12px;border:1px solid var(--line);border-radius:11px;background:#fff}.avatar{width:31px;height:31px;flex:0 0 31px;border-radius:50%;display:grid;place-items:center;background:#f3e5c6;color:var(--maroon);font-weight:600}.wish b{font:600 .73rem Cinzel,serif;color:var(--maroon)}.wish p{font: .8rem/1.5 'Playfair Display',serif;color:var(--muted);margin:4px 0 0}.small-note{font-size:.65rem;line-height:1.5;color:#958777;margin:10px 0 0}
+.footer{text-align:center;border-top:2px solid #bd914066;padding:25px 5px 5px;margin-top:35px}.footer h2{font:3.5rem 'Great Vibes',cursive;color:var(--maroon);margin:5px}.footer p{font:italic .88rem 'Playfair Display',serif;color:var(--muted)}.footer .thanks{font:600 .64rem Cinzel,serif;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-dark)}
+.modal-backdrop{position:fixed;inset:0;background:#211611aa;z-index:70;display:none;place-items:center;padding:18px}.modal-backdrop.show{display:grid}.modal{width:min(430px,100%);background:var(--paper);border:2px solid var(--gold);border-radius:18px;padding:25px;position:relative;box-shadow:0 25px 80px #0004}.modal h3{font:600 1.25rem Cinzel,serif;color:var(--maroon);text-align:center}.close{position:absolute;right:13px;top:10px;border:0;background:none;color:var(--maroon);font-size:1.5rem}.toast{position:fixed;bottom:18px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;z-index:90;background:var(--ink);color:white;border-radius:30px;padding:11px 18px;font-size:.73rem;transition:.25s;max-width:90%;text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}
+#petals{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:15}
+@media(max-width:680px){main{width:calc(100% - 16px);margin:12px auto 25px}.invitation{padding:26px 15px;border-width:4px}.corner{font-size:1.45rem}.ganesh{width:88px;height:104px}.shloka{font-size:.82rem}.grandparents{font-size:.87rem}.parents{font-size:.78rem}.program-grid{grid-template-columns:1fr}.day-card{padding:17px}.section{margin:32px 0}.countdown{gap:6px}.count{padding:11px 3px}.count span{font-size:.51rem;letter-spacing:.07em}.count strong{font-size:1.65rem}.top-controls{top:9px;right:9px}.control{padding:9px 11px}.entry h1{font-size:3.7rem}.map{height:225px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="entry" id="entry">
+  <div class="curtain" aria-hidden="true">
+    <div class="curtain-panel left"><div class="curtain-hem"></div></div>
+    <div class="curtain-panel right"><div class="curtain-hem"></div></div>
+  </div>
+  <div class="entry-card">
+    <div class="entry-ganesh">ॐ</div>
+    <div class="eyebrow">|| Shree Ganeshaya Namah ||</div>
+    <h1>Ankur <span>&</span> Neetu</h1>
+    <p>With the blessings of our families,<br>we invite you to celebrate a beautiful union.</p>
+    <button class="btn gold" id="enterBtn">Open wedding invitation <span>✧</span></button>
+    <p style="font: .65rem Poppins,sans-serif;margin:15px 0 0">Tap to enter · Music is optional</p>
+  </div>
+</div>
+
+<div class="top-controls">
+  <button class="control" id="musicToggle" aria-label="Open music controls">♫ <span id="musicLabel">Wedding music</span></button>
+  <button class="control" id="petalsToggle" aria-label="Toggle flower petals">❀</button>
+</div>
+<div class="music-panel" id="musicPanel">
+  <div><strong>Aaj Sajeya</strong><small>Goldie Sohel · Add licensed MP3 to play</small></div>
+  <button id="playBtn" aria-label="Play music">▶</button>
+  <button id="muteBtn" aria-label="Mute music">♫</button>
+</div>
+<audio id="weddingAudio" src="assets/music/aaj-sajeya.mp3" preload="none" loop></audio>
+<canvas id="petals" aria-hidden="true"></canvas>
+
+<main>
+<article class="invitation">
+  <span class="corner tl">❧</span><span class="corner tr">❧</span><span class="corner bl">❧</span><span class="corner br">❧</span>
+  <header class="hero">
+    <div class="ganesh" role="img" aria-label="Decorative Ganesha symbol" style="display:grid;place-items:center;font-size:76px;line-height:1;color:#d8b66d;text-shadow:0 2px 10px #7b4b1d55">ॐ</div>
+    <div class="eyebrow">|| Shree Ganeshaya Namah ||</div>
+    <p class="shloka">॥ वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।<br>निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥</p>
+    <div class="divider"><span></span>✥ ॐ ✥<span></span></div>
+
+    <div class="family">Grandson of</div>
+    <p class="grandparents">Late Smt. Hurma Devi <span style="color:var(--gold)">&</span> Late Sh. Sharma Singh</p>
+    <div class="couple">
+      <h1>Ankur</h1>
+      <p class="parents">Son of <b>Smt. Shashi Devi</b> and <b>Sh. Rajkumar</b></p>
+    </div>
+    <div class="weds">weds</div>
+    <div class="couple">
+      <h2>Neetu</h2>
+      <p class="parents">Daughter of <b>Late Smt. Pushpa Devi</b> and <b>Sh. Ramashankar</b></p>
+    </div>
+    <div class="invite-verse">“Together with our families, we request the pleasure of your presence to bless the newlyweds at this auspicious celebration of their union.”</div>
+    <p class="eyebrow">Friday & Saturday · 20–21 November 2026 · Gajraula</p>
+  </header>
+
+  <section class="countdown-wrap" aria-label="Wedding countdown">
+    <div class="ribbon">✧ Countdown to Shubha Vivah ✧</div>
+    <div class="countdown" id="countdown">
+      <div class="count"><strong id="cd-days">--</strong><span>Days</span></div>
+      <div class="count"><strong id="cd-hours">--</strong><span>Hours</span></div>
+      <div class="count"><strong id="cd-minutes">--</strong><span>Minutes</span></div>
+      <div class="count"><strong id="cd-seconds">--</strong><span>Seconds</span></div>
+    </div>
+    <p class="small-note" id="countdownNote">The celebrations begin with Ghudchadhi on 20 November at 4:00 PM IST.</p>
+  </section>
+
+  <section class="section" id="schedule">
+    <div class="section-head"><div class="ribbon">Program Schedule</div><p>We look forward to celebrating every beautiful moment with you.</p></div>
+    <div class="program-grid">
+      <div class="day-card">
+        <div class="day-title"><span class="day-number">20</span><div><h3>Friday</h3><p>November 20, 2026</p></div></div>
+        <div class="event"><span class="event-icon">🐎</span><div class="event-info"><div class="event-top"><b>Ghudchadhi</b><span class="time">04:00 PM</span></div><p>Traditional horse-mount ritual for the groom.</p></div></div>
+        <div class="event"><span class="event-icon">🥁</span><div class="event-info"><div class="event-top"><b>Baraat Procession</b><span class="time">05:00 PM</span></div><p>Grand musical baraat and a joyful welcome celebration.</p></div></div>
+        <div class="event"><span class="event-icon">💍</span><div class="event-info"><div class="event-top"><b>Lagna & Tilak</b><span class="time">06:00 PM</span></div><p>Auspicious Vedic rituals and exchange of garlands.</p></div></div>
+        <div class="event"><span class="event-icon">🍽</span><div class="event-info"><div class="event-top"><b>Dinner · Preeti Bhoj</b><span class="time">07:00 PM</span></div><p>A celebratory feast for all our honoured guests.</p></div></div>
+      </div>
+      <div class="day-card">
+        <div class="day-title"><span class="day-number" style="background:var(--gold)">21</span><div><h3>Saturday</h3><p>November 21, 2026</p></div></div>
+        <div class="event"><span class="event-icon">🙏</span><div class="event-info"><div class="event-top"><b>Doli / Vidaai</b><span class="time">05:00 AM</span></div><p>An auspicious departure and heartfelt blessings as the new bride begins her journey to a new home.</p></div></div>
+        <div class="day-quote">“May their journey together be filled with harmony, prosperity, and timeless companionship.”</div>
+        <div style="margin-top:20px"><a class="btn gold" id="calendarLink" target="_blank" rel="noopener">▦ Add to Google Calendar</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="venue">
+    <div class="section-head"><div class="ribbon">Wedding Venue</div><p>Your presence will make the celebration complete.</p></div>
+    <div class="venue-card">
+      <div class="venue-icon">⌖</div>
+      <div class="eyebrow">The celebration takes place at</div>
+      <h3>THE GRAND PLAZA</h3>
+      <p class="venue-address">Dhanaura Road, Opp. Teva Factory,<br>Gajraula, Uttar Pradesh, India</p>
+      <div class="venue-actions">
+        <a class="btn" id="directions" target="_blank" rel="noopener">↗ Get Driving Directions</a>
+        <button class="btn light" id="copyAddress">▢ <span id="copyText">Copy Address</span></button>
+      </div>
+      <iframe class="map" id="mapFrame" title="Google Maps location for The Grand Plaza, Gajraula" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <section class="section" id="wishes">
+    <div class="section-head"><div class="ribbon">Shubhkaamnayein & Blessings</div><p>Send your warm wishes and prayers to Ankur & Neetu.</p></div>
+    <div class="wishes-card">
+      <form id="wishesForm">
+        <div class="field"><label for="guestName">Your name / family</label><input id="guestName" required maxlength="80" placeholder="e.g. Sharma Family / Uncle Rajesh"></div>
+        <div class="field"><label for="guestMessage">Your blessings / message</label><textarea id="guestMessage" required maxlength="500" rows="3" placeholder="Wishing Ankur and Neetu a lifetime of love, good health and joyful togetherness..."></textarea></div>
+        <button class="btn gold" type="submit">♡ Send Blessing</button>
+      </form>
+      <p class="small-note">Guestbook note: messages are saved only in this browser on this device. They are not shared with the couple or other guests. Connect a database or Google Sheet to make a shared guestbook.</p>
+      <div class="wishes-list" id="wishesList"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="divider"><span></span>❀<span></span></div>
+    <p class="thanks">With Warm Regards & Best Compliments</p>
+    <h2>Ankur & Neetu</h2>
+    <p>Singh & Family · Relatives & Friends</p>
+    <p>Your presence and blessings are the greatest gift we could ask for.</p>
+    <div class="venue-actions">
+      <button class="btn" id="shareBtn">☘ Share on WhatsApp</button>
+      <button class="btn gold" id="rsvpOpen">♡ Confirm Attendance (RSVP)</button>
+    </div>
+    <p class="small-note">20 & 21 November 2026 · Gajraula</p>
+  </footer>
+</article>
+</main>
+
+<div class="modal-backdrop" id="rsvpModal" role="dialog" aria-modal="true" aria-labelledby="rsvpTitle">
+  <div class="modal">
+    <button class="close" id="rsvpClose" aria-label="Close RSVP">×</button>
+    <h3 id="rsvpTitle">RSVP · We're Excited!</h3>
+    <p style="font:italic .82rem 'Playfair Display',serif;text-align:center;color:var(--muted)">Please let the family know if you will be joining us.</p>
+    <form id="rsvpForm">
+      <div class="field"><label for="rsvpName">Your name</label><input id="rsvpName" required maxlength="80" placeholder="Full name"></div>
+      <div class="field"><label for="rsvpStatus">Will you attend?</label><select id="rsvpStatus"><option value="Joyfully Accept">Joyfully Accept</option><option value="Regretfully Decline">Regretfully Decline</option></select></div>
+      <div class="field"><label for="rsvpGuests">Number of guests</label><select id="rsvpGuests"><option>1 Person</option><option>2 Persons</option><option>3+ Persons / Family</option></select></div>
+      <button class="btn gold" type="submit" style="width:100%">Continue to WhatsApp RSVP</button>
+      <p class="small-note">This opens WhatsApp with your RSVP details. It does not silently save or submit a response.</p>
+    </form>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* =========================================================
+   EDITABLE WEDDING SETTINGS — update details here.
+   All dates use an explicit +05:30 IST offset.
+   ========================================================= */
+const WEDDING = {
+  countdownTarget: "2026-11-20T16:00:00+05:30", // Ghudchadhi start
+  venueName: "THE GRAND PLAZA",
+  venueAddress: "THE GRAND PLAZA, Dhanaura Road, Opp. Teva Factory, Gajraula, Uttar Pradesh, India",
+  whatsappNumber: "" // Optional: add family number, e.g. 919876543210
+};
+
+const $ = (id) => document.getElementById(id);
+function toast(message) {
+  const el = $("toast"); el.textContent = message; el.classList.add("show");
+  clearTimeout(toast.timer); toast.timer = setTimeout(() => el.classList.remove("show"), 3000);
+}
+
+/* Countdown: target timestamp includes IST offset, independent of visitor timezone. */
+const target = new Date(WEDDING.countdownTarget).getTime();
+function updateCountdown() {
+  const diff = target - Date.now();
+  if (diff <= 0) {
+    $("countdown").innerHTML = '<div style="grid-column:1/-1;font:600 1.1rem Cinzel,serif;color:var(--maroon);padding:15px">The wedding celebrations have begun! शुभ विवाह ✨</div>';
+    $("countdownNote").textContent = "Wishing Ankur & Neetu a lifetime of happiness.";
+    return;
+  }
+  const units = [
+    Math.floor(diff / 86400000),
+    Math.floor((diff % 86400000) / 3600000),
+    Math.floor((diff % 3600000) / 60000),
+    Math.floor((diff % 60000) / 1000)
+  ];
+  ["cd-days","cd-hours","cd-minutes","cd-seconds"].forEach((id,i) => $(id).textContent = String(units[i]).padStart(2,"0"));
+}
+updateCountdown(); setInterval(updateCountdown,1000);
+
+/* Google Maps search + directions. Verify this exact venue pin before publishing. */
+const mapsQuery = encodeURIComponent(WEDDING.venueAddress);
+$("directions").href = `https://www.google.com/maps/dir/?api=1&destination=${mapsQuery}`;
+$("mapFrame").src = `https://www.google.com/maps?q=${mapsQuery}&output=embed`;
+$("copyAddress").addEventListener("click", async () => {
+  try { await navigator.clipboard.writeText(WEDDING.venueAddress); }
+  catch { const t=document.createElement("textarea");t.value=WEDDING.venueAddress;document.body.appendChild(t);t.select();document.execCommand("copy");t.remove(); }
+  $("copyText").textContent="Copied!"; toast("Venue address copied"); setTimeout(()=>$("copyText").textContent="Copy Address",2200);
+});
+
+/* Calendar event: Friday 20 Nov 2026 16:00 IST through Saturday 21 Nov 2026 06:00 IST. */
+const calendar = new URL("https://calendar.google.com/calendar/render");
+calendar.search = new URLSearchParams({
+  action:"TEMPLATE", text:"Wedding: Ankur weds Neetu",
+  dates:"20261120T103000Z/20261121T003000Z",
+  details:"Wedding celebrations of Ankur & Neetu. Ghudchadhi, Baraat, Lagna & Tilak, Dinner and Vidaai.",
+  location:WEDDING.venueAddress
+}).toString();
+$("calendarLink").href=calendar.toString();
+
+/* Entry screen: sound is attempted only after the visitor's tap. */
+$("enterBtn").addEventListener("click", async () => {
+  const entry = $("entry");
+  entry.classList.add("opening");
+  // Let the velvet curtains part before fading away the entrance overlay.
+  await new Promise(resolve => setTimeout(resolve, 1900));
+  entry.classList.add("hide");
+  // Music is optional; the invitation opens even if the MP3 has not been added.
+  $("musicPanel").classList.add("open");
+  await playWeddingSong();
+});
+
+/* Reliable HTML5 audio player.
+   IMPORTANT: commit assets/music/aaj-sajeya.mp3 to GitHub for guests to hear it.
+   No MP3 is embedded in this HTML; browser cannot play a file that is not present. */
+const audio = $("weddingAudio");
+let muted = false;
+async function playWeddingSong() {
+  if (!audio.getAttribute("src")) { toast("Add the licensed Aaj Sajeya MP3 file first."); return; }
+  try {
+    await audio.play();
+    $("musicLabel").textContent="Music playing";
+    $("playBtn").textContent="Ⅱ";
+    toast("Playing Aaj Sajeya ♫");
+  } catch (err) {
+    $("musicLabel").textContent="Tap to play";
+    if (err.name === "NotAllowedError") toast("Tap Play to allow wedding music.");
+    else toast("Song file not found. Add assets/music/aaj-sajeya.mp3.");
+    console.warn("Audio playback failed:",err);
+  }
+}
+function pauseWeddingSong() { audio.pause(); $("playBtn").textContent="▶"; $("musicLabel").textContent="Wedding music"; }
+$("musicToggle").addEventListener("click", ()=>$("musicPanel").classList.toggle("open"));
+$("playBtn").addEventListener("click", async () => { if(audio.paused) await playWeddingSong(); else pauseWeddingSong(); });
+$("muteBtn").addEventListener("click", () => { muted=!muted; audio.muted=muted; $("muteBtn").textContent=muted?"🔇":"♫"; toast(muted?"Music muted":"Music unmuted"); });
+audio.addEventListener("error", () => { $("musicLabel").textContent="Add song file"; });
+audio.addEventListener("ended", () => { $("playBtn").textContent="▶"; });
+$("musicPanel").addEventListener("click", e => { if(e.target.id==="musicPanel") return; });
+
+/* Guestbook: local-only demo storage; messages are not public/shared. */
+const STORAGE_KEY="ankur_neetu_wedding_wishes_v2";
+const sampleWishes=[
+ {name:"The Verma Family",message:"Heartiest congratulations to Ankur and Neetu! May Lord Ganesha shower endless happiness and love upon both of you."},
+ {name:"Uncle Ramesh & Aunt Sunita",message:"Wishing you a sacred bond full of laughter and flourishing prosperity. See you at the celebration!"},
+ {name:"Pooja & Amit",message:"So thrilled for this beautiful union! Looking forward to dancing in the baraat. Best wishes always!"}
+];
+function safeWishes(){try{return JSON.parse(localStorage.getItem(STORAGE_KEY))||sampleWishes}catch{return sampleWishes}}
+function renderWishes(){
+  const list=$("wishesList"); list.replaceChildren();
+  safeWishes().forEach(w=>{
+    const item=document.createElement("div");item.className="wish";
+    const avatar=document.createElement("div");avatar.className="avatar";avatar.textContent=(w.name||"?").charAt(0).toUpperCase();
+    const body=document.createElement("div");const name=document.createElement("b");name.textContent=w.name;
+    const msg=document.createElement("p");msg.textContent=w.message;
+    body.append(name,msg);item.append(avatar,body);list.append(item);
+  });
+}
+renderWishes();
+$("wishesForm").addEventListener("submit",e=>{
+  e.preventDefault();const name=$("guestName").value.trim(),message=$("guestMessage").value.trim();if(!name||!message)return;
+  const current=safeWishes();current.unshift({name,message});
+  try{localStorage.setItem(STORAGE_KEY,JSON.stringify(current.slice(0,30)));}catch{}
+  renderWishes();e.target.reset();toast("Blessing saved on this device 🌸");
+});
+
+/* RSVP is sent to the family's WhatsApp, not falsely shown as saved to a database. */
+$("rsvpOpen").addEventListener("click",()=>$("rsvpModal").classList.add("show"));
+$("rsvpClose").addEventListener("click",()=>$("rsvpModal").classList.remove("show"));
+$("rsvpModal").addEventListener("click",e=>{if(e.target===$("rsvpModal"))$("rsvpModal").classList.remove("show")});
+$("rsvpForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  const name=$("rsvpName").value.trim(),status=$("rsvpStatus").value,guests=$("rsvpGuests").value;
+  const msg=encodeURIComponent(`Namaste! RSVP for Ankur & Neetu's wedding:\\nName: ${name}\\nResponse: ${status}\\nGuests: ${guests}`);
+  const url=WEDDING.whatsappNumber?`https://wa.me/${WEDDING.whatsappNumber}?text=${msg}`:`https://wa.me/?text=${msg}`;
+  window.open(url,"_blank","noopener");$("rsvpModal").classList.remove("show");e.target.reset();
+});
+$("shareBtn").addEventListener("click",()=>{
+  const msg=encodeURIComponent("🌸 Wedding Invitation: Ankur weds Neetu 🌸\\n\\nवक्रतुण्ड महाकाय सूर्यकोटि समप्रभ। निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥\\n\\n20–21 November 2026\\nTHE GRAND PLAZA, Dhanaura Road, Opp. Teva Factory, Gajraula, Uttar Pradesh\\n\\nWe cordially invite you and your family to bless the newlyweds. ✨");
+  window.open(`https://wa.me/?text=${msg}`,"_blank","noopener");
+});
+
+/* Lightweight flower-petal animation; pause button and reduced-motion support included. */
+const canvas=$("petals"),ctx=canvas.getContext("2d");let petalsOn=!matchMedia("(prefers-reduced-motion: reduce)").matches,raf=0,petals=[];
+function resize(){const dpr=Math.min(devicePixelRatio||1,1.5);canvas.width=innerWidth*dpr;canvas.height=innerHeight*dpr;canvas.style.width=innerWidth+"px";canvas.style.height=innerHeight+"px";ctx.setTransform(dpr,0,0,dpr,0,0);petals=Array.from({length:innerWidth<640?12:22},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,s:3+Math.random()*4,v:.35+Math.random()*.55,a:Math.random()*6,c:["#d9a64c","#e7c77e","#b94d43","#fff4df"][Math.floor(Math.random()*4)]}));}
+function draw(){ctx.clearRect(0,0,innerWidth,innerHeight);if(!petalsOn)return;for(const p of petals){p.y+=p.v;p.x+=Math.sin(p.y/45)*.25;ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.a+=.006);ctx.fillStyle=p.c;ctx.globalAlpha=.65;ctx.beginPath();ctx.ellipse(0,0,p.s,p.s*1.7,.5,0,Math.PI*2);ctx.fill();ctx.restore();if(p.y>innerHeight+10){p.y=-10;p.x=Math.random()*innerWidth;}}raf=requestAnimationFrame(draw);}
+addEventListener("resize",resize);resize();if(petalsOn)draw();
+$("petalsToggle").addEventListener("click",()=>{petalsOn=!petalsOn;if(petalsOn){cancelAnimationFrame(raf);draw();toast("Flower petals enabled");}else{cancelAnimationFrame(raf);ctx.clearRect(0,0,innerWidth,innerHeight);toast("Flower petals paused");}});
+</script>
+</body>
+</html>
